@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>音频与功率谱图示例</title>
+  <style>
+    /* 添加样式以美化页面 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .audio-section {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      flex-direction: column;
+    }
+    .audio-section > * {
+      margin-bottom: 5px;
+    }
+    .audio-section audio {
+      margin-bottom: 5px;
+      margin-right: 60px; /* 音频之间的间距 */
+    }
+    .audio-section audio:last-child {
+      margin-right: 0; /* 最后一个音频去除右侧间距 */
+    }
+    .spectrogram-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      margin-bottom: 5px;
+    }
+    .spectrogram-img {
+      border: 1px solid #ccc;
+      max-width: 300px; /* 调整频谱图大小 */
+      height: auto;
+    }
+    .audio-id,
+    .model-label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Demo</h1>
+  
+  <!-- 第一组音频与功率谱图 -->
+  <div class="audio-section" >
+    <p class="audio-id">Audio ID: S000-R01_S000001_C07_I0_Far-032824_033300</p>
+    <div class="spectrogram-container">
+      <div class="spectrogram-container">
+           <audio controls src="audio\Origin\S000-R01_S000001_C07_I0_Far-032824_033300.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+           <audio controls src="audio\GSS\S000-R01_S000001_C07_I0_Far-032824_033300.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+        <audio controls src="audio\Baseline\S000-R01_S000001_C07_I0_Far-032824_033300.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+        <audio controls src="audio\Ours\S000-R01_S000001_C07_I0_Far-032824_033300.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+        <audio controls src="audio\Label\S000-R01_S000001_C07_I0_Far-032824_033300.wav"></audio>
+      </div>
+    </div>
+    <div class="spectrogram-container">
+      <img class="spectrogram-img" src="images\Origin\S000-R01_S000001_C07_I0_Far-032824_033300.png" alt="频谱图1">
+      <img class="spectrogram-img" src="images\GSS\S000-R01_S000001_C07_I0_Far-032824_033300.png" alt="频谱图2">
+      <img class="spectrogram-img" src="images\Baseline\S000-R01_S000001_C07_I0_Far-032824_033300.png" alt="频谱图3">
+      <img class="spectrogram-img" src="images\Ours\S000-R01_S000001_C07_I0_Far-032824_033300.png" alt="频谱图4">
+      <img class="spectrogram-img" src="images\Label\S000-R01_S000001_C07_I0_Far-032824_033300.png" alt="频谱图5">
+    </div>
+    <div class="spectrogram-container" style="gap: 300px;">
+      <div class="model-label">     
+         <p class="model-label">Origin</p>
+      </div>
+      <div class="model-label">     
+        <p class="model-label">GSS</p>
+      </div>
+      <div class="model-label">     
+        <p class="model-label">Baseline</p>
+      </div>
+      <div class="model-label">     
+        <p class="model-label">Ours</p>
+      </div>   
+      <div class="model-label">     
+        <p class="model-label">Label</Label></p>
+      </div>
+    </div>
+  </div>
+  <!-- 第二组音频与功率谱图 -->
+  <div class="audio-section" >
+    <p class="audio-id">Audio ID: S006-R01_S006007008009_C05_I1_Far-027500_027932</p>
+    <div class="spectrogram-container">
+      <div class="spectrogram-container">
+           <audio controls src="audio\Origin\S006-R01_S006007008009_C05_I1_Far-027500_027932.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+           <audio controls src="audio\GSS\S006-R01_S006007008009_C05_I1_Far-027500_027932.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+        <audio controls src="audio\Baseline\S006-R01_S006007008009_C05_I1_Far-027500_027932.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+        <audio controls src="audio\Ours\S006-R01_S006007008009_C05_I1_Far-027500_027932.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+        <audio controls src="audio\Label\S006-R01_S006007008009_C05_I1_Far-027500_027932.wav"></audio>
+      </div>
+    </div>
+    <div class="spectrogram-container">
+      <img class="spectrogram-img" src="images\Origin\S006-R01_S006007008009_C05_I1_Far-027500_027932.png" alt="频谱图1">
+      <img class="spectrogram-img" src="images\GSS\S006-R01_S006007008009_C05_I1_Far-027500_027932.png" alt="频谱图2">
+      <img class="spectrogram-img" src="images\Baseline\S006-R01_S006007008009_C05_I1_Far-027500_027932.png" alt="频谱图3">
+      <img class="spectrogram-img" src="images\Ours\S006-R01_S006007008009_C05_I1_Far-027500_027932.png" alt="频谱图4">
+      <img class="spectrogram-img" src="images\Label\S006-R01_S006007008009_C05_I1_Far-027500_027932.png" alt="频谱图5">
+    </div>
+    <div class="spectrogram-container" style="gap: 300px;">
+      <div class="model-label">     
+         <p class="model-label">Origin</p>
+      </div>
+      <div class="model-label">     
+        <p class="model-label">GSS</p>
+      </div>
+      <div class="model-label">     
+        <p class="model-label">Baseline</p>
+      </div>
+      <div class="model-label">     
+        <p class="model-label">Ours</p>
+      </div>   
+      <div class="model-label">     
+        <p class="model-label">Label</Label></p>
+      </div>
+    </div>
+  </div>
+  <!-- 第三组音频与功率谱图 -->
+  <div class="audio-section" >
+    <p class="audio-id">Audio ID: S011-R01_S010011012_C04_I0_Far-081160_081508</p>
+    <div class="spectrogram-container">
+      <div class="spectrogram-container">
+           <audio controls src="audio\Origin\S011-R01_S010011012_C04_I0_Far-081160_081508.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+           <audio controls src="audio\GSS\S011-R01_S010011012_C04_I0_Far-081160_081508.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+        <audio controls src="audio\Baseline\S011-R01_S010011012_C04_I0_Far-081160_081508.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+        <audio controls src="audio\Ours\S011-R01_S010011012_C04_I0_Far-081160_081508.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+        <audio controls src="audio\Label\S011-R01_S010011012_C04_I0_Far-081160_081508.wav"></audio>
+      </div>
+    </div>
+    <div class="spectrogram-container">
+      <img class="spectrogram-img" src="images\Origin\S011-R01_S010011012_C04_I0_Far-081160_081508.png" alt="频谱图1">
+      <img class="spectrogram-img" src="images\GSS\S011-R01_S010011012_C04_I0_Far-081160_081508.png" alt="频谱图2">
+      <img class="spectrogram-img" src="images\Baseline\S011-R01_S010011012_C04_I0_Far-081160_081508.png" alt="频谱图3">
+      <img class="spectrogram-img" src="images\Ours\S011-R01_S010011012_C04_I0_Far-081160_081508.png" alt="频谱图4">
+      <img class="spectrogram-img" src="images\Label\S011-R01_S010011012_C04_I0_Far-081160_081508.png" alt="频谱图5">
+    </div>
+    <div class="spectrogram-container" style="gap: 300px;">
+      <div class="model-label">     
+         <p class="model-label">Origin</p>
+      </div>
+      <div class="model-label">     
+        <p class="model-label">GSS</p>
+      </div>
+      <div class="model-label">     
+        <p class="model-label">Baseline</p>
+      </div>
+      <div class="model-label">     
+        <p class="model-label">Ours</p>
+      </div>   
+      <div class="model-label">     
+        <p class="model-label">Label</Label></p>
+      </div>
+    </div>
+  </div>
+  <!-- 第四组音频与功率谱图 -->
+  <div class="audio-section" >
+    <p class="audio-id">Audio ID: S023-R01_S021022023_C01_I0_Far-057540_057800</p>
+    <div class="spectrogram-container">
+      <div class="spectrogram-container">
+           <audio controls src="audio\Origin\S023-R01_S021022023_C01_I0_Far-057540_057800.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+           <audio controls src="audio\GSS\S023-R01_S021022023_C01_I0_Far-057540_057800.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+        <audio controls src="audio\Baseline\S023-R01_S021022023_C01_I0_Far-057540_057800.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+        <audio controls src="audio\Ours\S023-R01_S021022023_C01_I0_Far-057540_057800.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+        <audio controls src="audio\Label\S023-R01_S021022023_C01_I0_Far-057540_057800.wav"></audio>
+      </div>
+    </div>
+    <div class="spectrogram-container">
+      <img class="spectrogram-img" src="images\Origin\S023-R01_S021022023_C01_I0_Far-057540_057800.png" alt="频谱图1">
+      <img class="spectrogram-img" src="images\GSS\S023-R01_S021022023_C01_I0_Far-057540_057800.png" alt="频谱图2">
+      <img class="spectrogram-img" src="images\Baseline\S023-R01_S021022023_C01_I0_Far-057540_057800.png" alt="频谱图3">
+      <img class="spectrogram-img" src="images\Ours\S023-R01_S021022023_C01_I0_Far-057540_057800.png" alt="频谱图4">
+      <img class="spectrogram-img" src="images\Label\S023-R01_S021022023_C01_I0_Far-057540_057800.png" alt="频谱图5">
+    </div>
+    <div class="spectrogram-container" style="gap: 300px;">
+      <div class="model-label">     
+         <p class="model-label">Origin</p>
+      </div>
+      <div class="model-label">     
+        <p class="model-label">GSS</p>
+      </div>
+      <div class="model-label">     
+        <p class="model-label">Baseline</p>
+      </div>
+      <div class="model-label">     
+        <p class="model-label">Ours</p>
+      </div>   
+      <div class="model-label">     
+        <p class="model-label">Label</Label></p>
+      </div>
+    </div>
+  </div>
+  <!-- 第五组音频与功率谱图 -->
+  <div class="audio-section" >
+    <p class="audio-id">Audio ID: S296-R54_S294295296297298299_C08_I2_Far-085760_086196</p>
+    <div class="spectrogram-container">
+      <div class="spectrogram-container">
+           <audio controls src="audio\Origin\S296-R54_S294295296297298299_C08_I2_Far-085760_086196.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+           <audio controls src="audio\GSS\S296-R54_S294295296297298299_C08_I2_Far-085760_086196.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+        <audio controls src="audio\Baseline\S296-R54_S294295296297298299_C08_I2_Far-085760_086196.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+        <audio controls src="audio\Ours\S296-R54_S294295296297298299_C08_I2_Far-085760_086196.wav"></audio>
+      </div>
+      <div class="spectrogram-container">
+        <audio controls src="audio\Label\S296-R54_S294295296297298299_C08_I2_Far-085760_086196.wav"></audio>
+      </div>
+    </div>
+    <div class="spectrogram-container">
+      <img class="spectrogram-img" src="images\Origin\S296-R54_S294295296297298299_C08_I2_Far-085760_086196.png" alt="频谱图1">
+      <img class="spectrogram-img" src="images\GSS\S296-R54_S294295296297298299_C08_I2_Far-085760_086196.png" alt="频谱图2">
+      <img class="spectrogram-img" src="images\Baseline\S296-R54_S294295296297298299_C08_I2_Far-085760_086196.png" alt="频谱图3">
+      <img class="spectrogram-img" src="images\Ours\S296-R54_S294295296297298299_C08_I2_Far-085760_086196.png" alt="频谱图4">
+      <img class="spectrogram-img" src="images\Label\S296-R54_S294295296297298299_C08_I2_Far-085760_086196.png" alt="频谱图5">
+    </div>
+    <div class="spectrogram-container" style="gap: 300px;">
+      <div class="model-label">     
+         <p class="model-label">Origin</p>
+      </div>
+      <div class="model-label">     
+        <p class="model-label">GSS</p>
+      </div>
+      <div class="model-label">     
+        <p class="model-label">Baseline</p>
+      </div>
+      <div class="model-label">     
+        <p class="model-label">Ours</p>
+      </div>   
+      <div class="model-label">     
+        <p class="model-label">Label</Label></p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 这里可以增加更多音频与功率谱图的组合 -->
+
+</body>
+</html>
